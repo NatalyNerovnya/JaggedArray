@@ -9,15 +9,6 @@ namespace JaggedArray
     public class JagArr
     {
         
-        #region Swap
-        private static void Swap(ref int[] a, ref int[] b)
-        {
-            int[] temp = a;
-            a = b;
-            b = temp;
-        }
-        #endregion 
-
         #region Sorting according to the sum
         public static void SortSum(ref int[][] arr)
         {
@@ -61,5 +52,12 @@ namespace JaggedArray
                 }
         }
         #endregion
+
+        private static void Swap(ref int[] a, ref int[] b)
+        {
+            int[] temp = a;
+            a = b;
+            b = temp;
+        }
     }
 }
