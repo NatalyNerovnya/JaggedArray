@@ -10,7 +10,7 @@ namespace JaggedArray
     {
         
         #region Sorting according to the sum
-        public static void SortSum(ref int[][] arr)
+        public static void SortSum(int[][] arr)
         {
             if (arr == null)
                 throw new ArgumentNullException();
@@ -26,7 +26,7 @@ namespace JaggedArray
         #endregion
 
         #region Sorting according to the max element in the row
-        public static void SortMax(ref int[][] arr)
+        public static void SortMax(int[][] arr)
         {
             for (int i = 0; i < arr.Length; i++)
                 for (int j = i + 1; j < arr.Length; j++)
@@ -40,7 +40,7 @@ namespace JaggedArray
         #endregion
 
         #region Sorting according to the min element in the row
-        public static void SortMin(ref int[][] arr)
+        public static void SortMin(int[][] arr)
         {
             for (int i = 0; i < arr.Length; i++)
                 for (int j = i + 1; j < arr.Length; j++)

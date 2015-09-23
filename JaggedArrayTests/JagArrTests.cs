@@ -21,7 +21,7 @@ namespace JaggedArrayTests
             resultArray[1] = new int[] { 6, 3, 4 };
             resultArray[2] = new int[] { 6, 3, 2 };
 
-            JagArr.SortSum(ref jagArr);
+            JagArr.SortSum(jagArr);
 
             CollectionAssert.AreEqual(jagArr[0], resultArray[0]);
             CollectionAssert.AreEqual(jagArr[1], resultArray[1]);
@@ -42,7 +42,7 @@ namespace JaggedArrayTests
             resultArray[1] = new int[] { -6, -3, -4 };
             resultArray[2] = new int[] { -3, -5, -2, -6, -1 };
 
-            JagArr.SortSum(ref jagArr);
+            JagArr.SortSum(jagArr);
 
             CollectionAssert.AreEqual(jagArr[0], resultArray[0]);
             CollectionAssert.AreEqual(jagArr[1], resultArray[1]);
@@ -63,7 +63,7 @@ namespace JaggedArrayTests
             resultArray[1] = new int[] { -6, 3, -2 };//-5
             resultArray[2] = new int[] { -3, -5, 2, -6, 1 };//-11
 
-            JagArr.SortSum(ref jagArr);
+            JagArr.SortSum(jagArr);
 
             CollectionAssert.AreEqual(jagArr[0], resultArray[0]);
             CollectionAssert.AreEqual(jagArr[1], resultArray[1]);
